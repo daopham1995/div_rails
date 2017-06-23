@@ -1,0 +1,15 @@
+<% provide :title, t("title_home") %>
+<!DOCTYPE html>
+<html>
+  <head>
+    <title><%= yield :title %> | Ruby on Rails Tutorial Sample App</title>
+  </head>
+  <body>
+    <h1>Sample App</h1>
+    <p>
+      <%= t "text_before" %>
+      <%= link_to t("text"), "http://www.railstutorial.org/" %>
+      <%= t "text_after" %>
+    </p>
+  </body>
+</html>
